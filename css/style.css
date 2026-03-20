@@ -1,0 +1,821 @@
+@font-face {
+  font-family: FahkwangS;
+  src: url(../fonts/Fahkwang-SemiBold.ttf);
+}
+@font-face {
+  font-family: FahkwangR;
+  src: url(../fonts/Fahkwang-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsR;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: InterS;
+  src: url(../fonts/Inter/static/Inter_18pt-SemiBold.ttf);
+}
+@font-face {
+  font-family: InterR;
+  src: url(../fonts/Inter/static/Inter_18pt-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsM;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rek {
+  background-color: #F9F3EE;
+}
+
+.fon {
+  background-color: rgba(204, 183, 167, 0.25);
+  height: 800px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.headhead {
+  position: relative;
+  min-height: 800px;
+}
+.headhead .header {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  gap: 35px;
+}
+.headhead .header .head_logo {
+  margin-right: auto;
+}
+.headhead .header .head_logo img {
+  width: 160px;
+  height: auto;
+  display: block;
+}
+.headhead .header .head_n_a {
+  font-family: FahkwangS;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+.headhead .header .head_n_a:hover {
+  color: #3D3017;
+}
+.headhead .header .head_cor {
+  margin-left: 140px;
+}
+.headhead .text_h1 {
+  font-family: FahkwangR;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 4px;
+  margin-top: 120px;
+  position: relative;
+}
+.headhead .text_h2 {
+  font-family: FahkwangS;
+  font-size: 60px;
+  color: #000000;
+  max-width: 537px;
+  margin-top: 8px;
+  position: relative;
+}
+.headhead .text_h3 {
+  font-family: PoppinsR;
+  font-size: 16px;
+  color: #3D3017;
+  max-width: 450px;
+  margin-top: 25px;
+  position: relative;
+}
+.headhead .head_but {
+  margin-top: 40px;
+  position: relative;
+}
+.headhead .head_but .head_but_shopnow {
+  background-color: #3D3017;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 25px;
+  font-family: FahkwangR;
+  font-size: 16px;
+  cursor: pointer;
+}
+.headhead .head_but .head_but_shopnow:hover {
+  background-color: #171104;
+}
+.headhead .img_h {
+  position: absolute;
+  top: 140px;
+  left: 600px;
+  max-width: 600px;
+}
+.headhead .img_f {
+  position: absolute;
+  top: 350px;
+  width: 261px;
+  right: 1300px;
+}
+.headhead .img_f1 {
+  position: absolute;
+  bottom: 400px;
+  left: 1420px;
+  width: 261px;
+  transform: rotate(180deg) translateX(50%);
+}
+
+.about {
+  padding: 126px 0 90px 0;
+}
+.about .about_img {
+  margin-bottom: 25px;
+  position: absolute;
+  right: 500px;
+}
+.about .about_t {
+  position: relative;
+  margin-left: 600px;
+  top: 80px;
+}
+.about .about_t .about_b {
+  font-family: FahkwangR;
+  font-size: 18px;
+  color: #3D3017;
+  margin-bottom: 15px;
+}
+.about .about_t .about_r {
+  font-family: FahkwangS;
+  font-size: 42px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.about .about_t .about_l {
+  font-family: PoppinsR;
+  font-size: 16px;
+  color: #3D3017;
+  max-width: 570px;
+}
+.about .about_but {
+  margin-top: 40px;
+}
+.about .about_but .about_but_i {
+  background-color: #3D3017;
+  color: #FFFFFF;
+  padding: 15px 25px;
+  font-family: FahkwangR;
+  font-size: 16px;
+  cursor: pointer;
+  border:none;
+}
+.about .about_but .about_but_i:hover {
+  background-color: #171104;
+  color: #FFFFFF;
+}
+
+.shop {
+  gap: 30px;
+  margin-top: 120px;
+}
+.shop .shop_t {
+  text-align: center;
+  margin-bottom: 44px;
+}
+.shop .shop_text {
+  font-family: FahkwangR;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 2px;
+}
+.shop .shop_text1 {
+  font-family: FahkwangS;
+  font-size: 42px;
+  color: #000000;
+}
+.shop .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.shop .cards .card_shop {
+  padding: 40px 25px 35px;
+  text-align: center;
+}
+.shop .cards .card_shop img {
+  width: 270px;
+  height: 304px;
+  margin-bottom: 25px;
+}
+.shop .cards .card_shop .card_shop_t {
+  font-family: FahkwangR;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.shop .cards .card_shop .card_shop_price {
+  font-family: FahkwangR;
+  font-size: 22px;
+  color: #000000;
+  margin: 15px 0 25px;
+}
+.shop .cards .card_shop .shop_but .shop_but_input {
+  color: #000000;
+  border: solid 1px #3D3017;
+  padding: 12px 30px;
+  font-family: FahkwangR;
+  font-size: 16px;
+  cursor: pointer;
+}
+.shop .cards .card_shop .shop_but .shop_but_input:hover {
+  background-color: #3D3017;
+  color: #FFFFFF;
+}
+.shop .cards .card_shop1 {
+  padding: 40px 25px 35px;
+  text-align: center;
+}
+.shop .cards .card_shop1 img {
+  width: 270px;
+  height: 304px;
+  margin-bottom: 25px;
+  background-color: #DCC0A7;
+}
+.shop .cards .card_shop1 .card_shop_t {
+  font-family: FahkwangR;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.shop .cards .card_shop1 .card_shop_price {
+  font-family: FahkwangR;
+  font-size: 22px;
+  color: #000000;
+  margin: 15px 0 25px;
+}
+.shop .cards .card_shop1 .shop_but .shop_but_input {
+  color: #000000;
+  border: solid 1px #3D3017;
+  padding: 12px 30px;
+  font-family: FahkwangR;
+  font-size: 16px;
+  cursor: pointer;
+}
+.shop .cards .card_shop1 .shop_but .shop_but_input:hover {
+  background-color: #3D3017;
+  color: #FFFFFF;
+}
+.shop .cards .card_shop2 {
+  padding: 40px 25px 35px;
+  text-align: center;
+}
+.shop .cards .card_shop2 img {
+  width: 270px;
+  height: 304px;
+  margin-bottom: 25px;
+  background-color: rgba(222, 181, 146, 0.8);
+}
+.shop .cards .card_shop2 .card_shop_t {
+  font-family: FahkwangR;
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.shop .cards .card_shop2 .card_shop_price {
+  font-family: FahkwangR;
+  font-size: 22px;
+  color: #000000;
+  margin: 15px 0 25px;
+}
+.shop .cards .card_shop2 .shop_but .shop_but_input {
+  color: #000000;
+  border: solid 1px #3D3017;
+  padding: 12px 30px;
+  font-family: FahkwangR;
+  font-size: 16px;
+  cursor: pointer;
+}
+.shop .cards .card_shop2 .shop_but .shop_but_input:hover {
+  background-color: #3D3017;
+  color: #FFFFFF;
+}
+
+.otz {
+  margin: 100px 0;
+}
+.otz .fon1 {
+  background: rgba(204, 183, 167, 0.25);
+  padding: 100px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  position: relative;
+}
+.otz .fon1 .otz_avatar {
+  width: 408px;
+  height: 430px;
+  position: relative;
+  left: 372px;
+}
+.otz .fon1 .otz_content {
+  width: 607px;
+  height: 279px;
+  left: 40px;
+  top: 50px;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.otz .fon1 .otz_content .otz_kav {
+  font-family: FahkwangS;
+  font-size: 150px;
+  color: #9B6842;
+  position: absolute;
+  bottom: 200px;
+  left: 260px;
+}
+.otz .fon1 .otz_content .otz_t {
+  font-family: FahkwangR;
+  font-size: 20px;
+  color: #000000;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 17px;
+}
+.otz .fon1 .otz_content .otz_t1 {
+  font-family: InterS;
+  font-size: 22px;
+  color: #3D3017;
+  position: relative;
+  bottom: 10px;
+}
+.otz .fon1 .otz_content .otz_t2 {
+  font-family: InterR;
+  font-size: 20px;
+  color: #000000;
+  position: relative;
+}
+.otz .fon1 .otz_decor {
+  position: absolute;
+  opacity: 0.5;
+  right: 630px;
+}
+
+.insta {
+  text-align: center;
+}
+.insta .insta_t {
+  font-family: FahkwangR;
+  font-size: 18px;
+  color: #3D3017;
+}
+.insta .insta_t1 {
+  font-family: FahkwangS;
+  font-size: 42px;
+  color: #000000;
+  margin-bottom: 43px;
+}
+.insta .insta_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.insta .insta_grid img {
+  width: 370px;
+  height: 477px;
+}
+
+.news {
+  margin: 100px 0;
+}
+.news .news_content {
+  max-width: 550px;
+}
+.news .news_content .news_img {
+  position: absolute;
+  width: 567px;
+  height: 396px;
+}
+.news .news_content .news_text {
+  margin-left: 600px;
+  width: 570px;
+  height: 254px;
+  position: relative;
+  top: 70px;
+}
+.news .news_content .news_text .news_t {
+  font-family: FahkwangS;
+  font-size: 42px;
+  color: #000000;
+  margin-bottom: 24px;
+  position: relative;
+}
+.news .news_content .news_text .news_t1 {
+  font-family: PoppinsR;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 37px;
+}
+.news .news_content .news_text .order_form {
+  display: flex;
+  gap: 15px;
+}
+.news .news_content .news_text .order_form .input {
+  padding: 18px 25px;
+  border: solid 1px #3D3017;
+  font-family: FahkwangR;
+  font-size: 16px;
+  background: none;
+  flex: 1;
+}
+.news .news_content .news_text .order_form .input::placeholder {
+  color: #3D3017;
+}
+.news .news_content .news_text .order_form .news_button {
+  background: #3D3017;
+  font-size: 30px;
+  cursor: pointer;
+  align-items: center;
+  position:absolute;
+  border:none;
+  left: 510px;
+  width: 53px;
+  height: 51px;
+  color: #FFFFFF;
+  bottom: 5px;
+
+
+}
+.news .news_content .news_text .order_form .news_button:hover {
+  background: #E6D5B8;
+  color: #000000;
+}
+
+.footer {
+  width: 100%;
+  padding: 120px 0 40px;
+  position: relative;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 94px;
+}
+.footer .fon1 {
+  background-color: rgba(204, 183, 167, 0.25);
+  height: 437px;
+}
+.footer .fon1 .group1 .footer_logo {
+  width: 140px;
+  margin-bottom: 25px;
+}
+.footer .fon1 .group1 .foot_t {
+  font-family: PoppinsR;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+  width: 449px;
+}
+.footer .fon1 .group1 .social_icons {
+  display: flex;
+  gap: 15px;
+}
+.footer .fon1 .group1 .social_icons img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.footer .fon1 .group1 .social_icons img:hover {
+  opacity: 1;
+}
+.footer .fon1 .group2 .foot_title {
+  font-family: PoppinsM;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.footer .fon1 .group2 .foot_link {
+  font-family: PoppinsR;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.footer .fon1 .group2 .foot_link:hover {
+  color: #3D3017;
+}
+.footer .fon1 .blog .blog_t {
+  font-family: PoppinsM;
+  font-size: 18px;
+  color: #3D3017;
+  margin-bottom: 15px;
+}
+.footer .fon1 .blog .card_blog {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.footer .fon1 .blog .card_blog img {
+  width: 70px;
+  height: 70px;
+}
+.footer .fon1 .blog .card_blog .blog_content .card_t {
+  font-family: PoppinsR;
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.footer .fon1 .blog .card_blog .blog_content .card_date {
+  font-family: PoppinsR;
+  font-size: 14px;
+  color: #000000;
+}
+.footer .fon1 .foot_t2 {
+  position: absolute;
+  top: 410px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: PoppinsR;
+  font-size: 14px;
+  color: #000000;
+  border-top: 1px solid rgba(61, 48, 23, 0.1);
+}
+
+@media (max-width: 390px) {
+  .container {
+    max-width: 350px;
+    padding: 0 15px;
+  }
+  .headhead {
+    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .headhead .header {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0;
+  }
+  .headhead .header .head_logo {
+    margin-right: 0;
+    width: 100%;
+  }
+  .headhead .header .head_n_a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+  .headhead .header .head_cor {
+    margin-left: 0;
+    width: 24px;
+  }
+  .headhead .text_h1 {
+    margin-top: 40px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .headhead .text_h2 {
+    font-size: 36px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .headhead .text_h3 {
+    max-width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .headhead .head_but {
+    text-align: center;
+  }
+  .headhead .head_but .head_but_shopnow {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+  .headhead .img_h, .headhead .img_f, .headhead .img_f1 {
+    display: none;
+  }
+  .about {
+    padding: 60px 0;
+  }
+  .about .about_img {
+    display: none;
+  }
+  .about .about_t {
+    position: static;
+    margin-left: 0;
+    text-align: center;
+  }
+  .about .about_t .about_b {
+    font-size: 16px;
+  }
+  .about .about_t .about_r {
+    font-size: 32px;
+  }
+  .about .about_t .about_l {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .about .about_but {
+    text-align: center;
+  }
+  .about .about_but .about_but_input {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+  .shop {
+    margin: 40px 0;
+  }
+  .shop .shop_text1 {
+    font-size: 32px;
+  }
+  .shop .cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .shop .cards .card_shop, .shop .cards .card_shop1, .shop .cards .card_shop2 {
+    padding: 20px;
+  }
+  .shop .cards .card_shop img, .shop .cards .card_shop1 img, .shop .cards .card_shop2 img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  .shop .cards .card_shop .card_shop_t, .shop .cards .card_shop1 .card_shop_t, .shop .cards .card_shop2 .card_shop_t {
+    font-size: 18px;
+  }
+  .shop .cards .card_shop .card_shop_price, .shop .cards .card_shop1 .card_shop_price, .shop .cards .card_shop2 .card_shop_price {
+    font-size: 20px;
+  }
+  .shop .cards .card_shop .shop_but_input, .shop .cards .card_shop1 .shop_but_input, .shop .cards .card_shop2 .shop_but_input {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .otz {
+    margin: 60px 0;
+  }
+  .otz .fon1 {
+    padding: 40px 20px;
+    grid-template-columns: 1fr;
+  }
+  .otz .fon1 .otz_avatar {
+    position: static;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+  }
+  .otz .fon1 .otz_content {
+    position: static;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .otz .fon1 .otz_content .otz_kav {
+    position: static;
+    font-size: 80px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .otz .fon1 .otz_content .otz_t {
+    margin-top: 0;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .otz .fon1 .otz_content .otz_t1 {
+    font-size: 20px;
+  }
+  .otz .fon1 .otz_content .otz_t2 {
+    font-size: 16px;
+  }
+  .otz .fon1 .otz_decor {
+    display: none;
+  }
+  .insta {
+    margin: 60px 0;
+  }
+  .insta .insta_t1 {
+    font-size: 32px;
+  }
+  .insta .insta_grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .insta .insta_grid img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+  .news {
+    margin: 60px 0;
+  }
+  .news .news_content {
+    max-width: 100%;
+  }
+  .news .news_content .news_img {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto 30px;
+  }
+  .news .news_content .news_text {
+    position: static;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .news .news_content .news_text .news_t {
+    font-size: 32px;
+  }
+  .news .news_content .news_text .news_t1 {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .news .news_content .news_text .order_form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .news .news_content .news_text .order_form .input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  .news .news_content .news_text .order_form .news_button {
+    width: 100%;
+    height: 51px;
+  }
+  .footer {
+    padding: 60px 0 30px;
+  }
+  .footer .fon1 {
+    height: auto;
+    padding: 40px 0;
+  }
+  .footer .container {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 20px;
+  }
+  .footer .group1 {
+    text-align: center;
+  }
+  .footer .group1 .footer_logo {
+    margin: 0 auto 20px;
+  }
+  .footer .group1 .foot_t {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+    font-size: 14px;
+  }
+  .footer .group1 .social_icons {
+    justify-content: center;
+  }
+  .footer .group2 {
+    text-align: center;
+  }
+  .footer .group2 .foot_title {
+    font-size: 18px;
+  }
+  .footer .group2 .foot_link {
+    font-size: 14px;
+  }
+  .footer .blog {
+    text-align: center;
+  }
+  .footer .blog .card_blog {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .blog .card_blog img {
+    margin-bottom: 10px;
+  }
+  .footer .blog .card_blog .blog_content {
+    text-align: center;
+  }
+  .footer .blog .card_blog .blog_content .card_t {
+    font-size: 14px;
+  }
+  .footer .blog .card_blog .blog_content .card_date {
+    font-size: 12px;
+  }
+  .footer .foot_t2 {
+    position: static;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */
